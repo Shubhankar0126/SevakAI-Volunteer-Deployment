@@ -11,7 +11,6 @@ import { useEffect, type ReactNode } from "react";
 
 // CSS ko global import kiya[cite: 1]
 import "../styles.css";
-
 import { Toaster } from "sonner";
 
 function NotFoundComponent() {
