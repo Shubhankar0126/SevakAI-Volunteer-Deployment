@@ -7,6 +7,7 @@ SevakAI is a startup-grade, role-based platform that turns a sea of volunteers
 into a coordinated, intelligent nervous system for national-scale events.
 
 Demo Link - https://drive.google.com/file/d/1e-ySYZgEIclCoeVlnS3qC6F2K62aH_Um/view?usp=sharing
+
 ## ✨ Features
 
 - **Beautiful landing page** - Emerald Authority design system, hero with live
