@@ -158,7 +158,7 @@ function HeroPanel() {
         <div className="mt-5 space-y-2">
           <div className="text-xs uppercase tracking-wider text-primary-foreground/50">AI Recommendations</div>
           {incidents.map((i) => (
-            <div key={i.tag} className="flex items-center justify-between rounded-lg border border-primary-foreground/10 bg-primary-foreground/[0.04] px-3 py-2.5">
+            <div key={i.tag} className="flex items-center justify-between rounded-lg border border-primary-foreground/10 bg-primary-foreground/4 px-3 py-2.5">
               <div className="flex items-center gap-3">
                 <div className="grid h-9 w-9 place-items-center rounded-md bg-primary-foreground/10">
                   <i.icon className={`h-4 w-4 ${i.tone}`} />
