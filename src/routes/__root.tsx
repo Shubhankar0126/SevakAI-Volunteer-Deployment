@@ -9,8 +9,8 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import appCss from "../styles.css?url";
-
+// CSS ko global import kiya[cite: 1]
+import "../styles.css";
 import { Toaster } from "sonner";
 
 function NotFoundComponent() {
@@ -93,12 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@SevakAI" },
     ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
+    // 'links' array hata diya gaya hai[cite: 1]
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -125,7 +120,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
       <Toaster position="top-right" richColors closeButton />
     </QueryClientProvider>
